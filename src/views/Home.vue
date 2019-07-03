@@ -14,32 +14,22 @@
 
 <script>
 // @ is an alias to /src
+import { onCreated } from "vue-function-api";
+import { getDog, pressMe, counter, image } from "../functions/func";
 
 export default {
   name: "home",
   components: {},
-  created() {
-    this.getDog();
-  },
-  methods: {
-    pressMe() {
-      this.counter++;
-      console.log(this.counter);
-    },
-    getDog() {
-      fetch("https://dog.ceo/api/breeds/image/random")
-        .then(res => res.json())
-        .then(res2 => {
-          this.image = res2.message;
+  setup() {
+    onCreated(() => {
+      getDog();
+    });
 
-          this.counter++;
-        });
-    }
-  },
-  data() {
     return {
-      counter: 0,
-      image: ""
+      pressMe,
+      getDog,
+      counter,
+      image
     };
   }
 };
