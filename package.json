@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit --require tests/init.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-e2e-cypress": "^3.9.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-plugin-unit-mocha": "^3.9.0",
     "@vue/cli-service": "^3.8.0",
@@ -24,6 +26,7 @@
     "chai": "^4.1.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "isomorphic-fetch": "^2.2.1",
     "vue-template-compiler": "^2.6.10"
   }
 }

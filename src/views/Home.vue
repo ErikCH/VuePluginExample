@@ -5,9 +5,9 @@
     <button @click="getDog">Get Dogs</button>
     <div class="dog-wrapper">
       <div class="picture-dog">
-        <img :src="image" alt />
+        <img :src="image" alt>
       </div>
-      <button v-on:click="pressMe">Increment Dog Count</button>
+      <button id="myCounter" v-on:click="pressMe">Increment Dog Count</button>
     </div>
   </div>
 </template>
