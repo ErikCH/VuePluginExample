@@ -1,5 +1,6 @@
 module.exports = {
+  productionSourceMap: false,
   configureWebpack: {
-    devtool: 'source-map'
+    devtool: "source-map"
   }
 };
