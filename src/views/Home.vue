@@ -3,6 +3,7 @@
     <h1>Random Dog Images By Erik</h1>
     <h2>Dog Count {{counter}}</h2>
     <button @click="getDog">Get Dogs</button>
+    <h2>Lets go1</h2>
     <div class="dog-wrapper">
       <div class="picture-dog">
         <img :src="image" alt />
