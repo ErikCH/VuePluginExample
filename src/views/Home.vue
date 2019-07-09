@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Random Dog Images By Erik</h1>
+    <h1>Random Dog Images Brought To You By Buddy</h1>
     <h2>Dog Count {{counter}}</h2>
     <button @click="getDog">Get Dogs</button>
     <div class="dog-wrapper">
