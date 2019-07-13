@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <h1>Random Dog Images By Erik</h1>
+    <h1>Random Dog Images By SteveDavid</h1>
     <h2>Dog Count {{counter}}</h2>
     <button @click="getDog">Get Dogs</button>
-    <h2>Lets go Brought To You By Buddy</h2>
+    <h2>Lets go to New York</h2>
     <div class="dog-wrapper">
       <div class="picture-dog">
         <img :src="image" alt />
